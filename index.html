@@ -3,82 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Menarik</title>
+    <title>Portofolio Lebih Menarik</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
-            background-color: #f0f8ff; /* Light Blue Background */
+            background-color: #c0c0c0; /* Silver Background */
             color: #333;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            background-image: linear-gradient(135deg, #d3d3d3, #a9a9a9); /* Gradien Silver */
         }
         .container {
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            background-color: rgba(255, 255, 255, 0.9); /* White dengan Transparansi */
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
             text-align: center;
-            width: 80%;
-            max-width: 600px;
+            width: 85%;
+            max-width: 700px;
         }
         h1 {
-            color: #2e8b57; /* Sea Green */
-            margin-bottom: 10px;
-            font-size: 2.5em;
+            color: #4682b4; /* Steel Blue */
+            margin-bottom: 15px;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
         }
         p.intro {
             color: #555;
-            line-height: 1.7;
-            margin-bottom: 30px;
-            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            font-size: 1.2em;
+            font-style: italic;
         }
         .info-box {
-            background-color: #e0f2f7; /* Light Cyan */
-            padding: 25px;
-            border-radius: 8px;
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
             text-align: left;
-            margin-top: 30px;
+            margin-top: 40px;
+            border-left: 5px solid #4682b4; /* Garis Sisi Biru */
         }
         .info-box h2 {
-            color: #008b8b; /* Dark Cyan */
+            color: #2f4f4f; /* Dark Slate Gray */
             margin-top: 0;
-            margin-bottom: 15px;
-            font-size: 1.8em;
-            border-bottom: 2px solid #8fbc8f; /* Dark Sea Green */
-            padding-bottom: 5px;
+            margin-bottom: 20px;
+            font-size: 2em;
+            border-bottom: 3px dashed #8fbc8f; /* Garis Bawah Putus-putus */
+            padding-bottom: 8px;
         }
         .info-box p {
-            margin-bottom: 12px;
-            font-size: 1em;
+            margin-bottom: 15px;
+            font-size: 1.1em;
         }
         .highlight {
             font-weight: bold;
-            color: #d2691e; /* Chocolate */
+            color: #b8860b; /* Goldenrod */
         }
-        /* Animasi sederhana */
+        /* Efek Hover pada Container */
+        .container:hover {
+            transform: scale(1.02);
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+        }
+        /* Animasi Fade In yang Lebih Lembut */
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
+            from { opacity: 0; transform: translateY(-30px); }
             to { opacity: 1; transform: translateY(0); }
         }
         .container {
-            animation: fadeIn 1s ease-out;
+            animation: fadeIn 1.2s ease-out;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Hai! Selamat Datang</h1>
-        <p class="intro">Ini adalah tampilan portofolio sederhana yang dibuat untuk kita berdua.</p>
+        <h1>Selamat Datang di Portofolio Kami</h1>
+        <p class="intro">Sebuah perkenalan sederhana tentang kita.</p>
 
         <div class="info-box">
-            <h2>Informasi Detail</h2>
-            <p><span class="highlight">Nama Saya:</span> Prana</p>
-            <p><span class="highlight">Nama Kamu:</span> Prana Dipa Anugraha</p>
-            <p><span class="highlight">Hobi Saya:</span> Bermain Game</p>
-            <p><span class="highlight">Asal Sekolah Saya:</span> SMP Al-Irsyad</p>
+            <h2>Informasi Pribadi</h2>
+            <p><span class="highlight">Nama Anda:</span> [Nama Kamu]</p>
+            <p><span class="highlight">Nama Saya:</span> Gemini (Asisten AI yang Kreatif)</p>
+            <p><span class="highlight">Hobi Anda:</span> [Sebutkan Hobi Kamu]</p>
+            <p><span class="highlight">Asal Sekolah Anda:</span> SMP Al-Irsyad</p>
         </div>
     </div>
 </body>
