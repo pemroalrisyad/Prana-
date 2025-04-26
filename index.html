@@ -3,48 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Sederhana</title>
+    <title>Portofolio Menarik</title>
     <style>
         body {
-            font-family: sans-serif;
-            margin: 20px;
-            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #f0f8ff; /* Light Blue Background */
             color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
         .container {
             background-color: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             text-align: center;
+            width: 80%;
+            max-width: 600px;
         }
-        h1, h2 {
-            color: #007bff;
-        }
-        p {
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
-        .info {
-            margin-top: 20px;
-            text-align: left;
-        }
-        .info p {
+        h1 {
+            color: #2e8b57; /* Sea Green */
             margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        p.intro {
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        .info-box {
+            background-color: #e0f2f7; /* Light Cyan */
+            padding: 25px;
+            border-radius: 8px;
+            text-align: left;
+            margin-top: 30px;
+        }
+        .info-box h2 {
+            color: #008b8b; /* Dark Cyan */
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #8fbc8f; /* Dark Sea Green */
+            padding-bottom: 5px;
+        }
+        .info-box p {
+            margin-bottom: 12px;
+            font-size: 1em;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #d2691e; /* Chocolate */
+        }
+        /* Animasi sederhana */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .container {
+            animation: fadeIn 1s ease-out;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Halo!</h1>
-        <p>Selamat datang di portofolio sederhana ini.</p>
+        <h1>Hai! Selamat Datang</h1>
+        <p class="intro">Ini adalah tampilan portofolio sederhana yang dibuat untuk kita berdua.</p>
 
-        <div class="info">
-            <h2>Informasi Saya</h2>
-            <p><strong>Nama Saya:</strong> Prana</p>
-            <p><strong>Nama Kamu:</strong> Prana Dipa Anugraha</p>
-            <p><strong>Hobi Saya:</strong> Bermain Game</p>
-            <p><strong>Asal Sekolah Saya:</strong> SMP Al-Irsyad</p>
+        <div class="info-box">
+            <h2>Informasi Detail</h2>
+            <p><span class="highlight">Nama Saya:</span> Prana</p>
+            <p><span class="highlight">Nama Kamu:</span> Prana Dipa Anugraha</p>
+            <p><span class="highlight">Hobi Saya:</span> Bermain Game</p>
+            <p><span class="highlight">Asal Sekolah Saya:</span> SMP Al-Irsyad</p>
         </div>
     </div>
 </body>
